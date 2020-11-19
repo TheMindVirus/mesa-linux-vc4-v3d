@@ -1,0 +1,10 @@
+prefix=/usr/local
+libdir=${prefix}/lib/arm-linux-gnueabihf
+includedir=${prefix}/include
+
+Name: glesv2
+Description: Mesa OpenGL ES 2.0 library
+Version: 20.2.2
+Libs: -L${libdir} -lGLESv2
+Libs.private: -lpthread -pthread -lm -ldl
+Cflags: -I${includedir}

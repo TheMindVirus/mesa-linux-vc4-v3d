@@ -1,0 +1,21 @@
+ 0x0000000e (SONAME)                     Library soname: [libglapi.so.0]
+_glapi_add_dispatch T 00000178
+_glapi_check_multithread T 00000004
+_glapi_Context B 00000004
+_glapi_destroy_multithread T 00000004
+_glapi_Dispatch B 00000004
+_glapi_get_context T 0000001c
+_glapi_get_dispatch T 0000001c
+_glapi_get_dispatch_table_size T 0000000c
+_glapi_get_proc_address T 00000064
+_glapi_get_proc_name T 00000018
+_glapi_get_proc_offset T 00000064
+_glapi_new_nop_table T 00000050
+_glapi_noop_enable_warnings T 00000004
+_glapi_set_context T 00000004
+_glapi_set_dispatch T 00000004
+_glapi_set_nop_handler T 00000004
+_glapi_set_warning_func T 00000004
+_glapi_tls_Context B 00000004
+_glapi_tls_Dispatch D 00000004
+_glthread_GetID T 00000008

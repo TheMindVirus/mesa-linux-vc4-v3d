@@ -1,0 +1,1 @@
+[{"cmd": ["/home/pi/Documents/mesa/mesa-20.2.2/builddir/src/broadcom/qpu/qpu_disasm"], "env": {}, "name": "qpu_disasm", "workdir": null, "timeout": 30, "suite": ["mesa:broadcom"], "is_parallel": true, "priority": 0}]

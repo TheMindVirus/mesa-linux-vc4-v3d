@@ -1,0 +1,10 @@
+prefix=/usr/local
+libdir=${prefix}/lib/arm-linux-gnueabihf
+includedir=${prefix}/include
+
+Name: gbm
+Description: Mesa gbm library
+Version: 20.2.2
+Libs: -L${libdir} -lgbm
+Libs.private: -ldl
+Cflags: -I${includedir}

@@ -1,0 +1,2717 @@
+Build started at 2020-11-18T23:05:53.660980
+Main binary: /usr/bin/python3
+Build Options: 
+Python system: Linux
+The Meson build system
+Version: 0.52.1
+Source dir: /home/pi/Documents/mesa/mesa-20.2.2
+Build dir: /home/pi/Documents/mesa/mesa-20.2.2/builddir
+Build type: native build
+Program python found: YES (/usr/bin/python)
+Running command: /usr/bin/python bin/meson_get_version.py
+--- stdout ---
+20.2.2
+--- stderr ---
+
+
+Project name: mesa
+Project version: 20.2.2
+No CFLAGS in the environment, not changing global flags.
+No LDFLAGS in the environment, not changing global flags.
+No CPPFLAGS in the environment, not changing global flags.
+Sanity testing C compiler: cc
+Is cross compiler: False.
+Sanity check compiler command line: cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/sanitycheckc.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/sanitycheckc.exe -pipe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/sanitycheckc.exe
+C compiler for the build machine: cc (gcc 8.3.0 "cc (Raspbian 8.3.0-6+rpi1) 8.3.0")
+C linker for the build machine: GNU ld.bfd 2.31.1
+No CXXFLAGS in the environment, not changing global flags.
+No LDFLAGS in the environment, not changing global flags.
+No CPPFLAGS in the environment, not changing global flags.
+Sanity testing C++ compiler: c++
+Is cross compiler: False.
+Sanity check compiler command line: c++ /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/sanitycheckcpp.cc -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/sanitycheckcpp.exe -pipe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/sanitycheckcpp.exe
+C++ compiler for the build machine: c++ (gcc 8.3.0 "c++ (Raspbian 8.3.0-6+rpi1) 8.3.0")
+C++ linker for the build machine: GNU ld.bfd 2.31.1
+No CFLAGS in the environment, not changing global flags.
+No LDFLAGS in the environment, not changing global flags.
+No CPPFLAGS in the environment, not changing global flags.
+Sanity testing C compiler: cc
+Is cross compiler: False.
+Sanity check compiler command line: cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/sanitycheckc.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/sanitycheckc.exe -pipe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/sanitycheckc.exe
+C compiler for the host machine: cc (gcc 8.3.0 "cc (Raspbian 8.3.0-6+rpi1) 8.3.0")
+C linker for the host machine: GNU ld.bfd 2.31.1
+No CXXFLAGS in the environment, not changing global flags.
+No LDFLAGS in the environment, not changing global flags.
+No CPPFLAGS in the environment, not changing global flags.
+Sanity testing C++ compiler: c++
+Is cross compiler: False.
+Sanity check compiler command line: c++ /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/sanitycheckcpp.cc -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/sanitycheckcpp.exe -pipe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/sanitycheckcpp.exe
+C++ compiler for the host machine: c++ (gcc 8.3.0 "c++ (Raspbian 8.3.0-6+rpi1) 8.3.0")
+C++ linker for the host machine: GNU ld.bfd 2.31.1
+Build machine cpu family: arm
+Build machine cpu: armv7l
+Host machine cpu family: arm
+Host machine cpu: armv7l
+Target machine cpu family: arm
+Target machine cpu: armv7l
+Program python3 found: YES (/usr/bin/python3)
+Running command: /usr/bin/python3 -c 
+from distutils.version import StrictVersion
+import mako
+assert StrictVersion(mako.__version__) > StrictVersion("0.8.0")
+  
+--- stdout ---
+
+--- stderr ---
+
+
+Running compile:
+Working directory:  /tmp/tmpzapzl2oo
+Command line:  cc /tmp/tmpzapzl2oo/testfile.c -pipe -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=c99 
+
+Code:
+ 
+        #include <errno.h>
+        #ifndef ETIME
+        # define ETIME
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+ETIME
+Compiler stdout:
+ 
+extern int *__errno_location (void) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
+
+        "MESON_GET_DEFINE_DELIMITER"
+62
+
+Compiler stderr:
+ 
+Fetching value of define "ETIME" : 62 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp1mehyifj
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp1mehyifj/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp1mehyifj/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #define bswap32 meson_disable_define_of_bswap32
+        
+        #include <limits.h>
+        #undef bswap32
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char bswap32 ();
+        
+        #if defined __stub_bswap32 || defined __stub___bswap32
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return bswap32 ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /usr/bin/ld: /tmp/cc9lwI9e.o: in function `main':
+testfile.c:(.text+0x8): undefined reference to `bswap32'
+collect2: error: ld returned 1 exit status
+
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpjbf_0zvy
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpjbf_0zvy/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpjbf_0zvy/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        int main() {
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_bswap32)
+                #error "__builtin_bswap32 not found"
+            #endif
+        #elif ! defined(bswap32)
+            /* Check for __builtin_bswap32 only if no includes were added to the
+             * prefix above, which means no definition of bswap32 can be found.
+             * We would always check for this, but we get false positives on
+             * MSYS2 if we do. Their toolchain is broken, but we can at least
+             * give them a workaround. */
+            #if 1
+                __builtin_bswap32;
+            #else
+                #error "No definition for __builtin_bswap32 found in the prefix"
+            #endif
+        #endif
+        return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "bswap32" : YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpb5f_obbu
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpb5f_obbu/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpb5f_obbu/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #define bswap64 meson_disable_define_of_bswap64
+        
+        #include <limits.h>
+        #undef bswap64
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char bswap64 ();
+        
+        #if defined __stub_bswap64 || defined __stub___bswap64
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return bswap64 ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /usr/bin/ld: /tmp/cc42Tqcy.o: in function `main':
+testfile.c:(.text+0x8): undefined reference to `bswap64'
+collect2: error: ld returned 1 exit status
+
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmps1ou581x
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmps1ou581x/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmps1ou581x/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        int main() {
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_bswap64)
+                #error "__builtin_bswap64 not found"
+            #endif
+        #elif ! defined(bswap64)
+            /* Check for __builtin_bswap64 only if no includes were added to the
+             * prefix above, which means no definition of bswap64 can be found.
+             * We would always check for this, but we get false positives on
+             * MSYS2 if we do. Their toolchain is broken, but we can at least
+             * give them a workaround. */
+            #if 1
+                __builtin_bswap64;
+            #else
+                #error "No definition for __builtin_bswap64 found in the prefix"
+            #endif
+        #endif
+        return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "bswap64" : YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpshs_qr7j
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpshs_qr7j/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpshs_qr7j/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #define clz meson_disable_define_of_clz
+        
+        #include <limits.h>
+        #undef clz
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char clz ();
+        
+        #if defined __stub_clz || defined __stub___clz
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return clz ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /usr/bin/ld: /tmp/ccsWAYG3.o: in function `main':
+testfile.c:(.text+0x8): undefined reference to `clz'
+collect2: error: ld returned 1 exit status
+
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpcyot3erx
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpcyot3erx/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpcyot3erx/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        int main() {
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_clz)
+                #error "__builtin_clz not found"
+            #endif
+        #elif ! defined(clz)
+            /* Check for __builtin_clz only if no includes were added to the
+             * prefix above, which means no definition of clz can be found.
+             * We would always check for this, but we get false positives on
+             * MSYS2 if we do. Their toolchain is broken, but we can at least
+             * give them a workaround. */
+            #if 1
+                __builtin_clz;
+            #else
+                #error "No definition for __builtin_clz found in the prefix"
+            #endif
+        #endif
+        return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "clz" : YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpwvmr54ty
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpwvmr54ty/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpwvmr54ty/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #define clzll meson_disable_define_of_clzll
+        
+        #include <limits.h>
+        #undef clzll
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char clzll ();
+        
+        #if defined __stub_clzll || defined __stub___clzll
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return clzll ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /usr/bin/ld: /tmp/ccDz12ln.o: in function `main':
+testfile.c:(.text+0x8): undefined reference to `clzll'
+collect2: error: ld returned 1 exit status
+
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp496gli_e
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp496gli_e/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp496gli_e/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        int main() {
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_clzll)
+                #error "__builtin_clzll not found"
+            #endif
+        #elif ! defined(clzll)
+            /* Check for __builtin_clzll only if no includes were added to the
+             * prefix above, which means no definition of clzll can be found.
+             * We would always check for this, but we get false positives on
+             * MSYS2 if we do. Their toolchain is broken, but we can at least
+             * give them a workaround. */
+            #if 1
+                __builtin_clzll;
+            #else
+                #error "No definition for __builtin_clzll found in the prefix"
+            #endif
+        #endif
+        return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "clzll" : YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp633hyclz
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp633hyclz/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp633hyclz/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #define ctz meson_disable_define_of_ctz
+        
+        #include <limits.h>
+        #undef ctz
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char ctz ();
+        
+        #if defined __stub_ctz || defined __stub___ctz
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return ctz ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /usr/bin/ld: /tmp/ccPsgDBP.o: in function `main':
+testfile.c:(.text+0x8): undefined reference to `ctz'
+collect2: error: ld returned 1 exit status
+
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp45j1a8rn
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp45j1a8rn/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp45j1a8rn/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        int main() {
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_ctz)
+                #error "__builtin_ctz not found"
+            #endif
+        #elif ! defined(ctz)
+            /* Check for __builtin_ctz only if no includes were added to the
+             * prefix above, which means no definition of ctz can be found.
+             * We would always check for this, but we get false positives on
+             * MSYS2 if we do. Their toolchain is broken, but we can at least
+             * give them a workaround. */
+            #if 1
+                __builtin_ctz;
+            #else
+                #error "No definition for __builtin_ctz found in the prefix"
+            #endif
+        #endif
+        return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "ctz" : YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmprz66e8ol
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmprz66e8ol/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmprz66e8ol/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #define expect meson_disable_define_of_expect
+        
+        #include <limits.h>
+        #undef expect
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char expect ();
+        
+        #if defined __stub_expect || defined __stub___expect
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return expect ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /usr/bin/ld: /tmp/cctWUSoh.o: in function `main':
+testfile.c:(.text+0x8): undefined reference to `expect'
+collect2: error: ld returned 1 exit status
+
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpmbvxnqok
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpmbvxnqok/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpmbvxnqok/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        int main() {
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_expect)
+                #error "__builtin_expect not found"
+            #endif
+        #elif ! defined(expect)
+            /* Check for __builtin_expect only if no includes were added to the
+             * prefix above, which means no definition of expect can be found.
+             * We would always check for this, but we get false positives on
+             * MSYS2 if we do. Their toolchain is broken, but we can at least
+             * give them a workaround. */
+            #if 1
+                __builtin_expect;
+            #else
+                #error "No definition for __builtin_expect found in the prefix"
+            #endif
+        #endif
+        return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "expect" : YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmps5rgmljj
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmps5rgmljj/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmps5rgmljj/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #define ffs meson_disable_define_of_ffs
+        
+        #include <limits.h>
+        #undef ffs
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char ffs ();
+        
+        #if defined __stub_ffs || defined __stub___ffs
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return ffs ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "ffs" : YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmprh1yq7wg
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmprh1yq7wg/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmprh1yq7wg/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #define ffsll meson_disable_define_of_ffsll
+        
+        #include <limits.h>
+        #undef ffsll
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char ffsll ();
+        
+        #if defined __stub_ffsll || defined __stub___ffsll
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return ffsll ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "ffsll" : YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp02oj34rq
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp02oj34rq/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp02oj34rq/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #define popcount meson_disable_define_of_popcount
+        
+        #include <limits.h>
+        #undef popcount
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char popcount ();
+        
+        #if defined __stub_popcount || defined __stub___popcount
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return popcount ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /usr/bin/ld: /tmp/ccWzmfU2.o: in function `main':
+testfile.c:(.text+0x8): undefined reference to `popcount'
+collect2: error: ld returned 1 exit status
+
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpd90rq7cz
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpd90rq7cz/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpd90rq7cz/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        int main() {
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_popcount)
+                #error "__builtin_popcount not found"
+            #endif
+        #elif ! defined(popcount)
+            /* Check for __builtin_popcount only if no includes were added to the
+             * prefix above, which means no definition of popcount can be found.
+             * We would always check for this, but we get false positives on
+             * MSYS2 if we do. Their toolchain is broken, but we can at least
+             * give them a workaround. */
+            #if 1
+                __builtin_popcount;
+            #else
+                #error "No definition for __builtin_popcount found in the prefix"
+            #endif
+        #endif
+        return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "popcount" : YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmphm79d5jc
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmphm79d5jc/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmphm79d5jc/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #define popcountll meson_disable_define_of_popcountll
+        
+        #include <limits.h>
+        #undef popcountll
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char popcountll ();
+        
+        #if defined __stub_popcountll || defined __stub___popcountll
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return popcountll ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /usr/bin/ld: /tmp/ccD3RLPr.o: in function `main':
+testfile.c:(.text+0x8): undefined reference to `popcountll'
+collect2: error: ld returned 1 exit status
+
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpscs2nwks
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpscs2nwks/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpscs2nwks/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        int main() {
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_popcountll)
+                #error "__builtin_popcountll not found"
+            #endif
+        #elif ! defined(popcountll)
+            /* Check for __builtin_popcountll only if no includes were added to the
+             * prefix above, which means no definition of popcountll can be found.
+             * We would always check for this, but we get false positives on
+             * MSYS2 if we do. Their toolchain is broken, but we can at least
+             * give them a workaround. */
+            #if 1
+                __builtin_popcountll;
+            #else
+                #error "No definition for __builtin_popcountll found in the prefix"
+            #endif
+        #endif
+        return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "popcountll" : YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp6wb7pagz
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp6wb7pagz/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp6wb7pagz/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #define unreachable meson_disable_define_of_unreachable
+        
+        #include <limits.h>
+        #undef unreachable
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char unreachable ();
+        
+        #if defined __stub_unreachable || defined __stub___unreachable
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return unreachable ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /usr/bin/ld: /tmp/ccJxODLT.o: in function `main':
+testfile.c:(.text+0x8): undefined reference to `unreachable'
+collect2: error: ld returned 1 exit status
+
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmphdm9xwpc
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmphdm9xwpc/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmphdm9xwpc/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        int main() {
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_unreachable)
+                #error "__builtin_unreachable not found"
+            #endif
+        #elif ! defined(unreachable)
+            /* Check for __builtin_unreachable only if no includes were added to the
+             * prefix above, which means no definition of unreachable can be found.
+             * We would always check for this, but we get false positives on
+             * MSYS2 if we do. Their toolchain is broken, but we can at least
+             * give them a workaround. */
+            #if 1
+                __builtin_unreachable;
+            #else
+                #error "No definition for __builtin_unreachable found in the prefix"
+            #endif
+        #endif
+        return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "unreachable" : YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpu_cg1n8x
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpu_cg1n8x/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpu_cg1n8x/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror 
+
+Code:
+ int foo(void) __attribute__((const));
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports function attribute const: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp83w60zno
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp83w60zno/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp83w60zno/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror 
+
+Code:
+ int foo(void) __attribute__((flatten));
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports function attribute flatten: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpwhrw28mf
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpwhrw28mf/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpwhrw28mf/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror 
+
+Code:
+ int *foo(void) __attribute__((malloc));
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports function attribute malloc: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpnmhqwzgv
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpnmhqwzgv/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpnmhqwzgv/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror 
+
+Code:
+ int foo(void) __attribute__((pure));
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports function attribute pure: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpxkfmtrev
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpxkfmtrev/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpxkfmtrev/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror 
+
+Code:
+ int foo(void) __attribute__((unused));
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports function attribute unused: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpda6avqm3
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpda6avqm3/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpda6avqm3/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror 
+
+Code:
+ int foo(void) __attribute__((warn_unused_result));
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports function attribute warn_unused_result: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp_tkn52e1
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp_tkn52e1/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp_tkn52e1/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror 
+
+Code:
+ int foo(void) __attribute__((weak));
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports function attribute weak: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpf6_yo0tv
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpf6_yo0tv/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpf6_yo0tv/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror 
+
+Code:
+ int foo(const char * p, ...) __attribute__((format(printf, 1, 2)));
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports function attribute format: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp9tczycpt
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp9tczycpt/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp9tczycpt/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror 
+
+Code:
+ struct __attribute__((packed)) foo { int bar; };
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports function attribute packed: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpk9v92bct
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpk9v92bct/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpk9v92bct/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror 
+
+Code:
+ int *foo(void) __attribute__((returns_nonnull));
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports function attribute returns_nonnull: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmps366apow
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmps366apow/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmps366apow/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror 
+
+Code:
+ 
+        int foo(void) { return 0; }
+        int bar(void) __attribute__((alias("foo")));
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports function attribute alias: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpyay21qpc
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpyay21qpc/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpyay21qpc/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror 
+
+Code:
+ int foo(void) __attribute__((noreturn));
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports function attribute noreturn: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpydqxpvcf
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpydqxpvcf/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpydqxpvcf/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror 
+
+Code:
+ int foo(void) __attribute__((visibility("hidden")));
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports function attribute visibility:hidden: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp1gk_r7j2
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp1gk_r7j2/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp1gk_r7j2/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ __uint128_t foo(void) { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp1gk_r7j2/testfile.c:1:1: error: unknown type name '__uint128_t'; did you mean '__int128'?
+ __uint128_t foo(void) { return 0; }
+ ^~~~~~~~~~~
+ __int128
+
+Checking if "__uint128_t" compiles: NO 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpxa6ntz7f
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpxa6ntz7f/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpxa6ntz7f/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=implicit-function-declaration 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Werror=implicit-function-declaration: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp7ebjleh2
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp7ebjleh2/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp7ebjleh2/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=missing-prototypes 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Werror=missing-prototypes: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp9mee_klw
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp9mee_klw/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp9mee_klw/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=return-type 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Werror=return-type: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp62vu0cj7
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp62vu0cj7/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp62vu0cj7/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=empty-body 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Werror=empty-body: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpy_l_vg5c
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpy_l_vg5c/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpy_l_vg5c/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=incompatible-pointer-types 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Werror=incompatible-pointer-types: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmptpl86yk7
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmptpl86yk7/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmptpl86yk7/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=int-conversion 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Werror=int-conversion: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpveub6enc
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpveub6enc/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpveub6enc/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wimplicit-fallthrough 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wimplicit-fallthrough: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpl77jcf_4
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpl77jcf_4/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpl77jcf_4/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wno-missing-field-initializers -Wmissing-field-initializers 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-missing-field-initializers -Wmissing-field-initializers: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp6i11w2nu
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp6i11w2nu/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp6i11w2nu/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wno-format-truncation -Wformat-truncation 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-format-truncation -Wformat-truncation: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmprus3rrui
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmprus3rrui/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmprus3rrui/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fno-math-errno 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -fno-math-errno: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpi4zl5vf9
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpi4zl5vf9/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpi4zl5vf9/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fno-trapping-math 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -fno-trapping-math: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp4puglq4m
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp4puglq4m/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp4puglq4m/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Qunused-arguments 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ cc: error: unrecognized command line option '-Qunused-arguments'; did you mean '-Wunused-parameter'?
+
+Compiler for C supports arguments -Qunused-arguments: NO 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp_kzybyx8
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp_kzybyx8/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp_kzybyx8/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fno-common 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -fno-common: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp9dttipnf
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp9dttipnf/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp9dttipnf/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=format 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Werror=format: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp2g5vq431
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp2g5vq431/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp2g5vq431/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wformat-security 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ cc1: warning: -Wformat-security ignored without -Wformat [-Wformat-security]
+
+Compiler for C supports arguments -Wformat-security: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpzkh1_dj7
+Command line:  c++ /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpzkh1_dj7/testfile.cpp -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpzkh1_dj7/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -Werror=return-type 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C++ supports arguments -Werror=return-type: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmprcsvh766
+Command line:  c++ /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmprcsvh766/testfile.cpp -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmprcsvh766/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -Werror=empty-body 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C++ supports arguments -Werror=empty-body: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpsbonlxrs
+Command line:  c++ /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpsbonlxrs/testfile.cpp -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpsbonlxrs/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -Wno-non-virtual-dtor -Wnon-virtual-dtor 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C++ supports arguments -Wno-non-virtual-dtor -Wnon-virtual-dtor: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp73b457uz
+Command line:  c++ /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp73b457uz/testfile.cpp -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp73b457uz/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -Wno-missing-field-initializers -Wmissing-field-initializers 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C++ supports arguments -Wno-missing-field-initializers -Wmissing-field-initializers: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpah8faa17
+Command line:  c++ /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpah8faa17/testfile.cpp -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpah8faa17/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -Wno-format-truncation -Wformat-truncation 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C++ supports arguments -Wno-format-truncation -Wformat-truncation: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp3skbea71
+Command line:  c++ /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp3skbea71/testfile.cpp -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp3skbea71/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -fno-math-errno 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C++ supports arguments -fno-math-errno: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpitoch1mm
+Command line:  c++ /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpitoch1mm/testfile.cpp -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpitoch1mm/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -fno-trapping-math 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C++ supports arguments -fno-trapping-math: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpe2lbbkgn
+Command line:  c++ /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpe2lbbkgn/testfile.cpp -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpe2lbbkgn/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -Qunused-arguments 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ c++: error: unrecognized command line option '-Qunused-arguments'; did you mean '-Wunused-parameter'?
+
+Compiler for C++ supports arguments -Qunused-arguments: NO 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp3g_c5ln1
+Command line:  c++ /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp3g_c5ln1/testfile.cpp -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp3g_c5ln1/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -flifetime-dse=1 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C++ supports arguments -flifetime-dse=1: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpcobylm3x
+Command line:  c++ /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpcobylm3x/testfile.cpp -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpcobylm3x/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -Werror=format 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C++ supports arguments -Werror=format: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpo6nof98r
+Command line:  c++ /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpo6nof98r/testfile.cpp -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpo6nof98r/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -Wformat-security 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ cc1plus: warning: -Wformat-security ignored without -Wformat [-Wformat-security]
+
+Compiler for C++ supports arguments -Wformat-security: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpxuf6nkic
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpxuf6nkic/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpxuf6nkic/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wno-override-init -Woverride-init 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-override-init -Woverride-init: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpok1_6wbe
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpok1_6wbe/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpok1_6wbe/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wno-initializer-overrides -Winitializer-overrides 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ cc: error: unrecognized command line option '-Winitializer-overrides'; did you mean '-Wno-suggest-override'?
+
+Compiler for C supports arguments -Wno-initializer-overrides -Winitializer-overrides: NO 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpd656jhcg
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpd656jhcg/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpd656jhcg/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=pointer-arith 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Werror=pointer-arith: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpgr68r1en
+Command line:  c++ /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpgr68r1en/testfile.cpp -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpgr68r1en/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -Werror=pointer-arith 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C++ supports arguments -Werror=pointer-arith: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp2_rnyctz
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp2_rnyctz/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp2_rnyctz/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=vla 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Werror=vla: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp0q2pj5oo
+Command line:  c++ /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp0q2pj5oo/testfile.cpp -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp0q2pj5oo/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -Werror=vla 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C++ supports arguments -Werror=vla: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpybc54_cv
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpybc54_cv/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpybc54_cv/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=gnu-empty-initializer 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ cc1: error: -Werror=gnu-empty-initializer: no option -Wgnu-empty-initializer
+
+Compiler for C supports arguments -Werror=gnu-empty-initializer: NO 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpb4trvnw_
+Command line:  c++ /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpb4trvnw_/testfile.cpp -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpb4trvnw_/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -Werror=gnu-empty-initializer 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ cc1plus: error: -Werror=gnu-empty-initializer: no option -Wgnu-empty-initializer
+
+Compiler for C++ supports arguments -Werror=gnu-empty-initializer: NO 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpkoy3d3_7
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpkoy3d3_7/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpkoy3d3_7/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ #include <stdint.h>
+                  int main() {
+                    struct {
+                      uint64_t *v;
+                    } x;
+                    return (int)__atomic_load_n(x.v, __ATOMIC_ACQUIRE) &
+                           (int)__atomic_add_fetch(x.v, (uint64_t)1, __ATOMIC_ACQ_REL);
+
+                  }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking if "GCC atomic builtins" compiles: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpgp729evh
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpgp729evh/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpgp729evh/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ #include <stdint.h>
+                     int main() {
+                       struct {
+                         uint64_t *v;
+                       } x;
+                       return (int)__atomic_load_n(x.v, __ATOMIC_ACQUIRE) &
+                              (int)__atomic_add_fetch(x.v, (uint64_t)1, __ATOMIC_ACQ_REL);
+                     }
+Compiler stdout:
+ 
+Compiler stderr:
+ /usr/bin/ld: /tmp/ccUYeD9E.o: in function `main':
+testfile.c:(.text+0x18): undefined reference to `__atomic_load_8'
+/usr/bin/ld: testfile.c:(.text+0x40): undefined reference to `__atomic_fetch_add_8'
+collect2: error: ld returned 1 exit status
+
+Checking if "GCC atomic builtins required -latomic" links: NO 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpga79m3va
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpga79m3va/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpga79m3va/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -latomic -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main() { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library atomic found: YES
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpgn_c78bh
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpgn_c78bh/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpgn_c78bh/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -latomic -Wl,--end-group 
+
+Code:
+ #include <stdint.h>
+                   uint64_t v;
+                   int main() {
+                     return __sync_add_and_fetch(&v, (uint64_t)1);
+                   }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking if "GCC 64bit atomics" with dependency -latomic links: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp87jmjecr
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp87jmjecr/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp87jmjecr/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lws2_32 -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main() { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ /usr/bin/ld: cannot find -lws2_32
+collect2: error: ld returned 1 exit status
+
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp1l3isktn
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp1l3isktn/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp1l3isktn/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include<stdio.h>
+        
+        int main() {
+            printf("%ld\n", (long)(sizeof(void *)));
+            return 0;
+        };
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Program stdout:
+
+4
+
+Program stderr:
+
+
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp94w04xql
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp94w04xql/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp94w04xql/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ install: /usr/lib/gcc/arm-linux-gnueabihf/8/
+programs: =/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../../arm-linux-gnueabihf/bin/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../../arm-linux-gnueabihf/bin/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../../arm-linux-gnueabihf/bin/
+libraries: =/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../../arm-linux-gnueabihf/lib/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../../arm-linux-gnueabihf/lib/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../../arm-linux-gnueabihf/lib/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../:/lib/arm-linux-gnueabihf/8/:/lib/arm-linux-gnueabihf/:/lib/:/usr/lib/arm-linux-gnueabihf/8/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/
+
+Compiler stderr:
+ 
+Library ws2_32 found: NO
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp491c0zfy
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp491c0zfy/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp491c0zfy/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #include <sys/sysmacros.h>
+        int main () {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef major
+                major;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <sys/sysmacros.h> has symbol "major" : YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpiab7i11c
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpiab7i11c/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpiab7i11c/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #include <sys/sysmacros.h>
+        int main () {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef minor
+                minor;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <sys/sysmacros.h> has symbol "minor" : YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpj51k_afa
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpj51k_afa/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpj51k_afa/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #include <sys/sysmacros.h>
+        int main () {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef makedev
+                makedev;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <sys/sysmacros.h> has symbol "makedev" : YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpltayp6as
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpltayp6as/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpltayp6as/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #include <sys/mkdev.h>
+        int main () {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef major
+                major;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpltayp6as/testfile.c:2:18: fatal error: sys/mkdev.h: No such file or directory
+         #include <sys/mkdev.h>
+                  ^~~~~~~~~~~~~
+compilation terminated.
+
+Header <sys/mkdev.h> has symbol "major" : NO 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpls6gvhh1
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpls6gvhh1/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpls6gvhh1/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #include <xlocale.h>
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpls6gvhh1/testfile.c:2:18: fatal error: xlocale.h: No such file or directory
+         #include <xlocale.h>
+                  ^~~~~~~~~~~
+compilation terminated.
+
+Check usable header "xlocale.h" : NO 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpkuf9dl7f
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpkuf9dl7f/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpkuf9dl7f/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #include <linux/futex.h>
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Check usable header "linux/futex.h" : YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpwuxkui56
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpwuxkui56/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpwuxkui56/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #include <endian.h>
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Check usable header "endian.h" : YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpd43jyza8
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpd43jyza8/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpd43jyza8/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #include <dlfcn.h>
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Check usable header "dlfcn.h" : YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpl7z4x2iy
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpl7z4x2iy/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpl7z4x2iy/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #include <execinfo.h>
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Check usable header "execinfo.h" : YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpnk4fqglg
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpnk4fqglg/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpnk4fqglg/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #include <sys/shm.h>
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Check usable header "sys/shm.h" : YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp59ge9wz4
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp59ge9wz4/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp59ge9wz4/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #include <cet.h>
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp59ge9wz4/testfile.c:2:18: fatal error: cet.h: No such file or directory
+         #include <cet.h>
+                  ^~~~~~~
+compilation terminated.
+
+Check usable header "cet.h" : NO 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpuhxr1y8v
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpuhxr1y8v/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpuhxr1y8v/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #include <pthread_np.h>
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpuhxr1y8v/testfile.c:2:18: fatal error: pthread_np.h: No such file or directory
+         #include <pthread_np.h>
+                  ^~~~~~~~~~~~~~
+compilation terminated.
+
+Check usable header "pthread_np.h" : NO 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpd1p5_57d
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpd1p5_57d/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpd1p5_57d/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #define strtof meson_disable_define_of_strtof
+        
+        #include <limits.h>
+        #undef strtof
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char strtof ();
+        
+        #if defined __stub_strtof || defined __stub___strtof
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return strtof ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "strtof" : YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp5rkhnrdx
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp5rkhnrdx/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp5rkhnrdx/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #define mkostemp meson_disable_define_of_mkostemp
+        
+        #include <limits.h>
+        #undef mkostemp
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char mkostemp ();
+        
+        #if defined __stub_mkostemp || defined __stub___mkostemp
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return mkostemp ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "mkostemp" : YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp1mzbk1j8
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp1mzbk1j8/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp1mzbk1j8/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #define timespec_get meson_disable_define_of_timespec_get
+        
+        #include <limits.h>
+        #undef timespec_get
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char timespec_get ();
+        
+        #if defined __stub_timespec_get || defined __stub___timespec_get
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return timespec_get ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "timespec_get" : YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpaiycysf_
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpaiycysf_/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpaiycysf_/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #define memfd_create meson_disable_define_of_memfd_create
+        
+        #include <limits.h>
+        #undef memfd_create
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char memfd_create ();
+        
+        #if defined __stub_memfd_create || defined __stub___memfd_create
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return memfd_create ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "memfd_create" : YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmphkdovwik
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmphkdovwik/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmphkdovwik/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #define random_r meson_disable_define_of_random_r
+        
+        #include <limits.h>
+        #undef random_r
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char random_r ();
+        
+        #if defined __stub_random_r || defined __stub___random_r
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return random_r ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "random_r" : YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp5icze2aq
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp5icze2aq/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp5icze2aq/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #define flock meson_disable_define_of_flock
+        
+        #include <limits.h>
+        #undef flock
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char flock ();
+        
+        #if defined __stub_flock || defined __stub___flock
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return flock ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "flock" : YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpqy5y_yy2
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpqy5y_yy2/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpqy5y_yy2/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #define strtok_r meson_disable_define_of_strtok_r
+        
+        #include <limits.h>
+        #undef strtok_r
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char strtok_r ();
+        
+        #if defined __stub_strtok_r || defined __stub___strtok_r
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return strtok_r ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "strtok_r" : YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpkzkevava
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpkzkevava/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpkzkevava/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #define getrandom meson_disable_define_of_getrandom
+        
+        #include <limits.h>
+        #undef getrandom
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char getrandom ();
+        
+        #if defined __stub_getrandom || defined __stub___getrandom
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return getrandom ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "getrandom" : YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpik6wq4bn
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpik6wq4bn/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpik6wq4bn/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -D_GNU_SOURCE 
+
+Code:
+ 
+        #include <errno.h>
+        int main () {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef program_invocation_name
+                program_invocation_name;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <errno.h> has symbol "program_invocation_name" : YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp77te80j7
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp77te80j7/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp77te80j7/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #define posix_memalign meson_disable_define_of_posix_memalign
+        
+        #include <limits.h>
+        #undef posix_memalign
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char posix_memalign ();
+        
+        #if defined __stub_posix_memalign || defined __stub___posix_memalign
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return posix_memalign ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "posix_memalign" : YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpocvuw3i7
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpocvuw3i7/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpocvuw3i7/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ #include <sys/types.h>
+   #include <dirent.h>
+        void bar() {
+            struct dirent foo;
+            foo.d_type;
+
+        };
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking whether type "struct dirent" has member "d_type" : YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmprv5sx1sw
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmprv5sx1sw/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmprv5sx1sw/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -DPACKAGE_VERSION="20.2.2" -DPACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues" -DUSE_ELF_TLS -DENABLE_ST_OMX_BELLAGIO=0 -DENABLE_ST_OMX_TIZONIA=0 -DHAVE_X11_PLATFORM -DGLX_INDIRECT_RENDERING -DGLX_DIRECT_RENDERING -DGLX_USE_DRM -DHAVE_DRM_PLATFORM -DENABLE_SHADER_CACHE -DHAVE___BUILTIN_BSWAP32 -DHAVE___BUILTIN_BSWAP64 -DHAVE___BUILTIN_CLZ -DHAVE___BUILTIN_CLZLL -DHAVE___BUILTIN_CTZ -DHAVE___BUILTIN_EXPECT -DHAVE___BUILTIN_FFS -DHAVE___BUILTIN_FFSLL -DHAVE___BUILTIN_POPCOUNT -DHAVE___BUILTIN_POPCOUNTLL -DHAVE___BUILTIN_UNREACHABLE -DHAVE_FUNC_ATTRIBUTE_CONST -DHAVE_FUNC_ATTRIBUTE_FLATTEN -DHAVE_FUNC_ATTRIBUTE_MALLOC -DHAVE_FUNC_ATTRIBUTE_PURE -DHAVE_FUNC_ATTRIBUTE_UNUSED -DHAVE_FUNC_ATTRIBUTE_WARN_UNUSED_RESULT -DHAVE_FUNC_ATTRIBUTE_WEAK -DHAVE_FUNC_ATTRIBUTE_FORMAT -DHAVE_FUNC_ATTRIBUTE_PACKED -DHAVE_FUNC_ATTRIBUTE_RETURNS_NONNULL -DHAVE_FUNC_ATTRIBUTE_ALIAS -DHAVE_FUNC_ATTRIBUTE_NORETURN -DHAVE_FUNC_ATTRIBUTE_VISIBILITY -D_GNU_SOURCE -DUSE_GCC_ATOMIC_BUILTINS -DUSE_ARM_ASM -DMAJOR_IN_SYSMACROS -DHAVE_LINUX_FUTEX_H -DHAVE_ENDIAN_H -DHAVE_DLFCN_H -DHAVE_EXECINFO_H -DHAVE_SYS_SHM_H -DHAVE_STRTOF -DHAVE_MKOSTEMP -DHAVE_TIMESPEC_GET -DHAVE_MEMFD_CREATE -DHAVE_RANDOM_R -DHAVE_FLOCK -DHAVE_STRTOK_R -DHAVE_GETRANDOM -DHAVE_PROGRAM_INVOCATION_NAME -DHAVE_POSIX_MEMALIGN -DHAVE_DIRENT_D_TYPE 
+
+Code:
+ 
+    #define _GNU_SOURCE
+    #include <stdlib.h>
+    #include <locale.h>
+    #ifdef HAVE_XLOCALE_H
+    #include <xlocale.h>
+    #endif
+    int main() {
+      locale_t loc = newlocale(LC_CTYPE_MASK, "C", NULL);
+      const char *s = "1.0";
+      char *end;
+      double d = strtod_l(s, end, loc);
+      float f = strtof_l(s, end, loc);
+      freelocale(loc);
+      return 0;
+    }
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmprv5sx1sw/testfile.c:2: warning: "_GNU_SOURCE" redefined
+     #define _GNU_SOURCE
+ 
+<command-line>: note: this is the location of the previous definition
+/home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmprv5sx1sw/testfile.c: In function 'main':
+/home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmprv5sx1sw/testfile.c:12:30: warning: passing argument 2 of 'strtod_l' from incompatible pointer type [-Wincompatible-pointer-types]
+       double d = strtod_l(s, end, loc);
+                              ^~~
+In file included from /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmprv5sx1sw/testfile.c:3:
+/usr/include/stdlib.h:296:22: note: expected 'char ** restrict' but argument is of type 'char *'
+    char **__restrict __endptr, locale_t __loc)
+    ~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmprv5sx1sw/testfile.c:13:29: warning: passing argument 2 of 'strtof_l' from incompatible pointer type [-Wincompatible-pointer-types]
+       float f = strtof_l(s, end, loc);
+                             ^~~
+In file included from /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmprv5sx1sw/testfile.c:3:
+/usr/include/stdlib.h:300:28: note: expected 'char ** restrict' but argument is of type 'char *'
+          char **__restrict __endptr, locale_t __loc)
+          ~~~~~~~~~~~~~~~~~~^~~~~~~~
+
+Checking if "strtod has locale support" links: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmprevmoru6
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmprevmoru6/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmprevmoru6/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,-Bsymbolic 
+
+Code:
+ int main() { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking if "Bsymbolic" links: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmphowgfzxn
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmphowgfzxn/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmphowgfzxn/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--gc-sections 
+
+Code:
+ static char unused() { return 5; } int main() { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking if "gc-sections" links: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpquoc3jov
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpquoc3jov/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpquoc3jov/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--version-script=/home/pi/Documents/mesa/mesa-20.2.2/build-support/conftest.map 
+
+Code:
+ int main() { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking if "version-script" links: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpol82a_kb
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpol82a_kb/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpol82a_kb/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--dynamic-list=/home/pi/Documents/mesa/mesa-20.2.2/build-support/conftest.dyn 
+
+Code:
+ int main() { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking if "dynamic-list" links: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpl8hv_yjs
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpl8hv_yjs/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpl8hv_yjs/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--fatal-warnings -Wl,--build-id=sha1 
+
+Code:
+ int main() { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports link arguments -Wl,--build-id=sha1: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpr3y7l3at
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpr3y7l3at/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpr3y7l3at/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #define dlopen meson_disable_define_of_dlopen
+        
+        #include <limits.h>
+        #undef dlopen
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char dlopen ();
+        
+        #if defined __stub_dlopen || defined __stub___dlopen
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return dlopen ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /usr/bin/ld: /tmp/ccnZWznX.o: in function `main':
+testfile.c:(.text+0x8): undefined reference to `dlopen'
+collect2: error: ld returned 1 exit status
+
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpyqlpymw3
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpyqlpymw3/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpyqlpymw3/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        int main() {
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_dlopen)
+                #error "__builtin_dlopen not found"
+            #endif
+        #elif ! defined(dlopen)
+            /* Check for __builtin_dlopen only if no includes were added to the
+             * prefix above, which means no definition of dlopen can be found.
+             * We would always check for this, but we get false positives on
+             * MSYS2 if we do. Their toolchain is broken, but we can at least
+             * give them a workaround. */
+            #if 1
+                __builtin_dlopen;
+            #else
+                #error "No definition for __builtin_dlopen found in the prefix"
+            #endif
+        #endif
+        return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpyqlpymw3/testfile.c: In function 'main':
+/home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpyqlpymw3/testfile.c:14:17: error: '__builtin_dlopen' undeclared (first use in this function); did you mean '__builtin_drem'?
+                 __builtin_dlopen;
+                 ^~~~~~~~~~~~~~~~
+                 __builtin_drem
+/home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpyqlpymw3/testfile.c:14:17: note: each undeclared identifier is reported only once for each function it appears in
+
+Checking for function "dlopen" : NO 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpda5np0xq
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpda5np0xq/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpda5np0xq/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -ldl -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main() { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library dl found: YES
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp8ccl5dpy
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp8ccl5dpy/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp8ccl5dpy/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -Wl,--start-group -ldl -Wl,--end-group 
+
+Code:
+ 
+        #define dladdr meson_disable_define_of_dladdr
+        
+        #include <limits.h>
+        #undef dladdr
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char dladdr ();
+        
+        #if defined __stub_dladdr || defined __stub___dladdr
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return dladdr ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "dladdr" with dependency -ldl: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpwik4h1l8
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpwik4h1l8/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpwik4h1l8/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #define dl_iterate_phdr meson_disable_define_of_dl_iterate_phdr
+        
+        #include <limits.h>
+        #undef dl_iterate_phdr
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char dl_iterate_phdr ();
+        
+        #if defined __stub_dl_iterate_phdr || defined __stub___dl_iterate_phdr
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return dl_iterate_phdr ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "dl_iterate_phdr" : YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpkeqfb759
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpkeqfb759/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpkeqfb759/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #define clock_gettime meson_disable_define_of_clock_gettime
+        
+        #include <limits.h>
+        #undef clock_gettime
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char clock_gettime ();
+        
+        #if defined __stub_clock_gettime || defined __stub___clock_gettime
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return clock_gettime ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "clock_gettime" : YES 
+Pkg-config binary for MachineChoice.HOST is not cached.
+Pkg-config binary missing from cross or native file, or env var undefined.
+Trying a default pkg-config fallback at pkg-config
+Trying pkg-config binary pkg-config for machine MachineChoice.HOST at ['/usr/bin/pkg-config']
+Found pkg-config: /usr/bin/pkg-config (0.29)
+Determining dependency 'zlib' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --modversion zlib` -> 0
+1.2.11
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --cflags zlib` -> 0
+
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config zlib --libs` -> 0
+-L/usr/lib/arm-linux-gnueabihf -lz
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config zlib --libs` -> 0
+-lz
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp5gmc_ddh
+Command line:  c++ /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp5gmc_ddh/testfile.cpp -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp5gmc_ddh/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -fpermissive 
+
+Code:
+ #include<stdio.h>
+        
+        int main() {
+            printf("%ld\n", (long)(sizeof(void *)));
+            return 0;
+        };
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Program stdout:
+
+4
+
+Program stderr:
+
+
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpcyj3_34h
+Command line:  c++ /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpcyj3_34h/testfile.cpp -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpcyj3_34h/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ install: /usr/lib/gcc/arm-linux-gnueabihf/8/
+programs: =/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../../arm-linux-gnueabihf/bin/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../../arm-linux-gnueabihf/bin/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../../arm-linux-gnueabihf/bin/
+libraries: =/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../../arm-linux-gnueabihf/lib/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../../arm-linux-gnueabihf/lib/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../../arm-linux-gnueabihf/lib/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../:/lib/arm-linux-gnueabihf/8/:/lib/arm-linux-gnueabihf/:/lib/:/usr/lib/arm-linux-gnueabihf/8/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/
+
+Compiler stderr:
+ 
+Run-time dependency zlib found: YES 1.2.11
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'libzstd' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --modversion libzstd` -> 1
+
+CMake binary for MachineChoice.HOST is not cached
+CMake binary missing from cross or native file, or env var undefined.
+Trying a default CMake fallback at cmake
+Trying CMake binary cmake for machine MachineChoice.HOST at ['/usr/bin/cmake']
+Found CMake: /usr/bin/cmake (3.13.4)
+Extracting basic cmake information
+Try CMake generator: auto
+Called `/usr/bin/cmake --trace-expand .` in /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/cmake_libzstd -> 0
+  -- Module search paths:    ['/', '/opt', '/usr', '/usr/local']
+  -- CMake root:             /usr/share/cmake-3.13
+  -- CMake architectures:    ['arm-linux-gnueabihf']
+  -- CMake lib search paths: ['lib', 'lib32', 'lib64', 'libx32', 'share', 'lib/arm-linux-gnueabihf']
+Run-time dependency libzstd found: NO (tried pkgconfig and cmake)
+Run-time dependency threads found: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmptsjuoe80
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmptsjuoe80/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmptsjuoe80/output.exe -pipe -pthread -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -D_GNU_SOURCE 
+
+Code:
+ #include <pthread.h>
+#include <limits.h>
+
+        #if defined __stub_pthread_setaffinity_np || defined __stub___pthread_setaffinity_np
+        fail fail fail this function is not going to work
+        #endif
+        
+int main() {
+            void *a = (void*) &pthread_setaffinity_np;
+            long b = (long) a;
+            return (int) b;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "pthread_setaffinity_np" with dependency threads: YES 
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'expat' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --modversion expat` -> 0
+2.2.6
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --cflags expat` -> 0
+
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config expat --libs` -> 0
+-L/usr/lib/arm-linux-gnueabihf -lexpat
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config expat --libs` -> 0
+-lexpat
+Run-time dependency expat found: YES 2.2.6
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpvm5nknku
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpvm5nknku/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpvm5nknku/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lm -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main() { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library m found: YES
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'libdrm' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --modversion libdrm` -> 0
+2.4.100
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --cflags libdrm` -> 0
+-I/usr/include/libdrm
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config libdrm --libs` -> 0
+-L/usr/lib/arm-linux-gnueabihf -ldrm
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config libdrm --libs` -> 0
+-ldrm
+Run-time dependency libdrm found: YES 2.4.100
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'valgrind' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --modversion valgrind` -> 1
+
+Run-time dependency valgrind found: NO (tried pkgconfig)
+Program bison found: YES (/usr/bin/bison)
+Program bison found: YES (/usr/bin/bison)
+Running command: /usr/bin/bison --version
+--- stdout ---
+bison (GNU Bison) 3.3.2
+Written by Robert Corbett and Richard Stallman.
+
+Copyright (C) 2019 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+--- stderr ---
+
+
+Program flex found: YES (/usr/bin/flex)
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'libunwind' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --modversion libunwind` -> 1
+
+CMake binary for MachineChoice.HOST is cached.
+Run-time dependency libunwind found: NO (tried pkgconfig and cmake)
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'x11' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --modversion x11` -> 0
+1.6.7
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --cflags x11` -> 0
+
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config x11 --libs` -> 0
+-L/usr/lib/arm-linux-gnueabihf -lX11
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config x11 --libs` -> 0
+-lX11
+Run-time dependency x11 found: YES 1.6.7
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'xext' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --modversion xext` -> 0
+1.3.3
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --cflags xext` -> 0
+
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config xext --libs` -> 0
+-L/usr/lib/arm-linux-gnueabihf -lXext
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config xext --libs` -> 0
+-lXext
+Run-time dependency xext found: YES 1.3.3
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'xdamage' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --modversion xdamage` -> 0
+1.1.4
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --cflags xdamage` -> 0
+
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config xdamage --libs` -> 0
+-L/usr/lib/arm-linux-gnueabihf -lXdamage -lXfixes
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config xdamage --libs` -> 0
+-lXdamage -lXfixes
+Run-time dependency xdamage found: YES 1.1.4
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'xfixes' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --modversion xfixes` -> 0
+5.0.3
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --cflags xfixes` -> 0
+
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config xfixes --libs` -> 0
+-L/usr/lib/arm-linux-gnueabihf -lXfixes
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config xfixes --libs` -> 0
+-lXfixes
+Run-time dependency xfixes found: YES 5.0.3
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'xcb-glx' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --modversion xcb-glx` -> 0
+1.13.1
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --cflags xcb-glx` -> 0
+
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config xcb-glx --libs` -> 0
+-L/usr/lib/arm-linux-gnueabihf -lxcb-glx
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config xcb-glx --libs` -> 0
+-lxcb-glx
+Run-time dependency xcb-glx found: YES 1.13.1
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'xcb' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --modversion xcb` -> 0
+1.13.1
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --cflags xcb` -> 0
+
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config xcb --libs` -> 0
+-L/usr/lib/arm-linux-gnueabihf -lxcb
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config xcb --libs` -> 0
+-lxcb
+Run-time dependency xcb found: YES 1.13.1
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'x11-xcb' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --modversion x11-xcb` -> 0
+1.6.7
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --cflags x11-xcb` -> 0
+
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config x11-xcb --libs` -> 0
+-L/usr/lib/arm-linux-gnueabihf -lX11-xcb -lX11 -lxcb
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config x11-xcb --libs` -> 0
+-lX11-xcb -lX11 -lxcb
+Run-time dependency x11-xcb found: YES 1.6.7
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'xcb-dri2' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --modversion xcb-dri2` -> 0
+1.13.1
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --cflags xcb-dri2` -> 0
+
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config xcb-dri2 --libs` -> 0
+-L/usr/lib/arm-linux-gnueabihf -lxcb-dri2
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config xcb-dri2 --libs` -> 0
+-lxcb-dri2
+Run-time dependency xcb-dri2 found: YES 1.13.1
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'xcb-dri3' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --modversion xcb-dri3` -> 0
+1.13.1
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --cflags xcb-dri3` -> 0
+
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config xcb-dri3 --libs` -> 0
+-L/usr/lib/arm-linux-gnueabihf -lxcb-dri3
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config xcb-dri3 --libs` -> 0
+-lxcb-dri3
+Run-time dependency xcb-dri3 found: YES 1.13.1
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'xcb-present' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --modversion xcb-present` -> 0
+1.13.1
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --cflags xcb-present` -> 0
+
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config xcb-present --libs` -> 0
+-L/usr/lib/arm-linux-gnueabihf -lxcb-present
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config xcb-present --libs` -> 0
+-lxcb-present
+Run-time dependency xcb-present found: YES 1.13.1
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'xcb-sync' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --modversion xcb-sync` -> 0
+1.13.1
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --cflags xcb-sync` -> 0
+
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config xcb-sync --libs` -> 0
+-L/usr/lib/arm-linux-gnueabihf -lxcb-sync
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config xcb-sync --libs` -> 0
+-lxcb-sync
+Run-time dependency xcb-sync found: YES 1.13.1
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'xshmfence' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --modversion xshmfence` -> 0
+1.3
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --cflags xshmfence` -> 0
+
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config xshmfence --libs` -> 0
+-L/usr/lib/arm-linux-gnueabihf -lxshmfence
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config xshmfence --libs` -> 0
+-lxshmfence
+Run-time dependency xshmfence found: YES 1.3
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'glproto' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --modversion glproto` -> 0
+1.4.17
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --cflags glproto` -> 0
+
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config glproto --libs` -> 0
+
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config glproto --libs` -> 0
+
+Run-time dependency glproto found: YES 1.4.17
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'dri2proto' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --modversion dri2proto` -> 0
+2.8
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --cflags dri2proto` -> 0
+
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config dri2proto --libs` -> 0
+
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config dri2proto --libs` -> 0
+
+Run-time dependency dri2proto found: YES 2.8
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'xxf86vm' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --modversion xxf86vm` -> 0
+1.1.4
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --cflags xxf86vm` -> 0
+
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config xxf86vm --libs` -> 0
+-L/usr/lib/arm-linux-gnueabihf -lXxf86vm
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config xxf86vm --libs` -> 0
+-lXxf86vm
+Run-time dependency xxf86vm found: YES 1.1.4
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'xcb-xfixes' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --modversion xcb-xfixes` -> 0
+1.13.1
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --cflags xcb-xfixes` -> 0
+
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config xcb-xfixes --libs` -> 0
+-L/usr/lib/arm-linux-gnueabihf -lxcb-xfixes
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config xcb-xfixes --libs` -> 0
+-lxcb-xfixes
+Run-time dependency xcb-xfixes found: YES 1.13.1
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'xcb-randr' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --modversion xcb-randr` -> 0
+1.13.1
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --cflags xcb-randr` -> 0
+
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config xcb-randr --libs` -> 0
+-L/usr/lib/arm-linux-gnueabihf -lxcb-randr
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config xcb-randr --libs` -> 0
+-lxcb-randr
+Run-time dependency xcb-randr found: YES 1.13.1
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'xrandr' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --modversion xrandr` -> 0
+1.5.1
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --cflags xrandr` -> 0
+
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config xrandr --libs` -> 0
+-L/usr/lib/arm-linux-gnueabihf -lXrandr
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config xrandr --libs` -> 0
+-lXrandr
+Run-time dependency xrandr found: YES 1.5.1
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpd2c9kxwb
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpd2c9kxwb/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpd2c9kxwb/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lsensors -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main() { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library sensors found: YES
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp8j_83nih
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp8j_83nih/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp8j_83nih/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--fatal-warnings -Wl,--gc-sections 
+
+Code:
+ int main() { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports link arguments -Wl,--gc-sections: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp2kkag7ev
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp2kkag7ev/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp2kkag7ev/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -ffunction-sections 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -ffunction-sections: YES 
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp5xl1u_k7
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp5xl1u_k7/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmp5xl1u_k7/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fdata-sections 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -fdata-sections: YES 
+Program nm found: YES (/usr/bin/nm)
+Program symbols-check.py found: YES (/usr/bin/env python /home/pi/Documents/mesa/mesa-20.2.2/bin/symbols-check.py)
+Program install_megadrivers.py found: YES (/usr/bin/python3 /home/pi/Documents/mesa/mesa-20.2.2/bin/install_megadrivers.py)
+WARNING: Library target 'GLESv1_CM' has 'name_prefix' set. Compilers may not find it from its '-lGLESv1_CM' linker flag in the 'glesv1_cm.pc' pkg-config file.
+WARNING: Library target 'GLESv2' has 'name_prefix' set. Compilers may not find it from its '-lGLESv2' linker flag in the 'glesv2.pc' pkg-config file.
+Adding test "qpu_disasm"
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'v3dv3' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --modversion v3dv3` -> 1
+
+CMake binary for MachineChoice.HOST is cached.
+Run-time dependency v3dv3 found: NO (tried pkgconfig and cmake)
+Running compile:
+Working directory:  /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpa_huesql
+Command line:  cc /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpa_huesql/testfile.c -o /home/pi/Documents/mesa/mesa-20.2.2/builddir/meson-private/tmpa_huesql/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #define mincore meson_disable_define_of_mincore
+        
+        #include <limits.h>
+        #undef mincore
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char mincore ();
+        
+        #if defined __stub_mincore || defined __stub___mincore
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return mincore ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "mincore" : YES 
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'simpenrose' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --modversion simpenrose` -> 1
+
+CMake binary for MachineChoice.HOST is cached.
+Run-time dependency simpenrose found: NO (tried pkgconfig and cmake)
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'v3dv3' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: 
+CMake binary for MachineChoice.HOST is cached.
+Run-time dependency v3dv3 found: NO (tried pkgconfig and cmake)
+Program /home/pi/Documents/mesa/mesa-20.2.2/bin/install_megadrivers.py found: YES (/usr/bin/python3 /home/pi/Documents/mesa/mesa-20.2.2/bin/install_megadrivers.py)
+Message: Configuration summary:
+        
+        prefix:          /usr/local
+        libdir:          lib/arm-linux-gnueabihf
+        includedir:      include
+        
+        OpenGL:          yes (ES1: yes ES2: yes)
+        OSMesa:          no
+        
+        DRI platform:    drm
+        DRI drivers:     no
+        DRI driver dir:  /usr/local/lib/arm-linux-gnueabihf/dri
+        
+        GLX:             DRI-based
+        
+        EGL:             yes
+        EGL drivers:     builtin:egl_dri2 builtin:egl_dri3
+        GBM:             yes
+        EGL/Vulkan/VL platforms:   x11 surfaceless drm
+        
+        Vulkan drivers:  no
+        
+        llvm:            no
+        
+        Gallium drivers: vc4 v3d swrast
+        Gallium st:      mesa
+        HUD lmsensors:   yes
+        
+        Shared-glapi:    yes
+
+Build targets in project: 131
+Found ninja-1.8.2 at /usr/bin/ninja
+Running compile:
+Working directory:  /tmp/tmpmkh_2600
+Command line:  c++ /tmp/tmpmkh_2600/testfile.cpp -o /tmp/tmpmkh_2600/output.obj -pipe -D_FILE_OFFSET_BITS=64 -c -std=c++14 
+
+Code:
+ int i = static_cast<int>(0);
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler accepts -std=c++14: YES
